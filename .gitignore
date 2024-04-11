@@ -5,11 +5,11 @@
 
 
 # All files and folders mentioned here will not be ignored. Use "!" to mark them
-!/.config
-!/.bash_profile
-!/.zshrc
-!/.pki
-!/gnupg
-!/.ssh
-!/.viminfo
-!/.gitignore
+!/.config/
+!/.bash_profile/
+!/.zshrc/
+!/.pki/
+!/gnupg/
+!/.ssh/
+!/.viminfo/
+!/.gitignore/

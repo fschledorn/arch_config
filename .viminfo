@@ -15,9 +15,9 @@
 
 # Command Line History (newest to oldest):
 :q!
-|2,0,1712855218,,"q!"
+|2,0,1713525173,,"q!"
 :i
-|2,0,1712855200,,"i"
+|2,0,1713524840,,"i"
 :q1
 |2,0,1712600116,,"q1"
 :/servers
@@ -44,46 +44,64 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+"1	LINE	0
 	
-|3,1,1,1,1,0,1712855215,""
-"-	CHAR	0
+|3,0,1,1,1,0,1712855215,""
+""-	CHAR	0
 	i
-|3,0,36,0,1,0,1712855208,"i"
+|3,1,36,0,1,0,1713524846,"i"
 
 # File marks:
-'0  1  0  ~/.config/.gitignore
-|4,48,1,0,1712855218,"~/.config/.gitignore"
-'1  30  9  ~/Downloads/lock
-|4,49,30,9,1712600119,"~/Downloads/lock"
-'2  35  0  ~/Downloads/lock
-|4,50,35,0,1712599121,"~/Downloads/lock"
+'0  4  1  ~/heiQuality_Treffen.md
+|4,48,4,1,1713525173,"~/heiQuality_Treffen.md"
+'1  1  0  ~/.config/.gitignore
+|4,49,1,0,1712855218,"~/.config/.gitignore"
+'2  30  9  ~/Downloads/lock
+|4,50,30,9,1712600119,"~/Downloads/lock"
 '3  35  0  ~/Downloads/lock
 |4,51,35,0,1712599121,"~/Downloads/lock"
-'4  1126  18  ~/Downloads/eduroam-linux-HU.py
-|4,52,1126,18,1712593857,"~/Downloads/eduroam-linux-HU.py"
-'5  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,53,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+'4  35  0  ~/Downloads/lock
+|4,52,35,0,1712599121,"~/Downloads/lock"
+'5  1126  18  ~/Downloads/eduroam-linux-HU.py
+|4,53,1126,18,1712593857,"~/Downloads/eduroam-linux-HU.py"
 '6  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,54,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
+|4,54,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
 '7  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
 |4,55,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
 '8  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
 |4,56,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
-'9  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,57,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
+'9  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,57,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
 
 # Jumplist (newest first):
+-'  4  1  ~/heiQuality_Treffen.md
+|4,39,4,1,1713525173,"~/heiQuality_Treffen.md"
+-'  1  0  ~/heiQuality_Treffen.md
+|4,39,1,0,1713524836,"~/heiQuality_Treffen.md"
+-'  1  0  ~/.config/.gitignore
+|4,39,1,0,1712855218,"~/.config/.gitignore"
 -'  1  0  ~/.config/.gitignore
 |4,39,1,0,1712855218,"~/.config/.gitignore"
 -'  30  9  ~/Downloads/lock
 |4,39,30,9,1712600119,"~/Downloads/lock"
 -'  30  9  ~/Downloads/lock
 |4,39,30,9,1712600119,"~/Downloads/lock"
+-'  30  9  ~/Downloads/lock
+|4,39,30,9,1712600119,"~/Downloads/lock"
+-'  30  9  ~/Downloads/lock
+|4,39,30,9,1712600119,"~/Downloads/lock"
 -'  35  0  ~/Downloads/lock
 |4,39,35,0,1712599999,"~/Downloads/lock"
 -'  35  0  ~/Downloads/lock
 |4,39,35,0,1712599999,"~/Downloads/lock"
+-'  35  0  ~/Downloads/lock
+|4,39,35,0,1712599999,"~/Downloads/lock"
+-'  35  0  ~/Downloads/lock
+|4,39,35,0,1712599999,"~/Downloads/lock"
+-'  35  0  ~/Downloads/lock
+|4,39,35,0,1712599121,"~/Downloads/lock"
+-'  35  0  ~/Downloads/lock
+|4,39,35,0,1712599121,"~/Downloads/lock"
 -'  35  0  ~/Downloads/lock
 |4,39,35,0,1712599121,"~/Downloads/lock"
 -'  35  0  ~/Downloads/lock
@@ -96,6 +114,14 @@
 |4,39,1,0,1712598904,"~/Downloads/lock"
 -'  1  0  ~/Downloads/lock
 |4,39,1,0,1712598904,"~/Downloads/lock"
+-'  1  0  ~/Downloads/lock
+|4,39,1,0,1712598904,"~/Downloads/lock"
+-'  1  0  ~/Downloads/lock
+|4,39,1,0,1712598904,"~/Downloads/lock"
+-'  1  0  ~/Downloads/lock
+|4,39,1,0,1712598904,"~/Downloads/lock"
+-'  1  0  ~/Downloads/lock
+|4,39,1,0,1712598904,"~/Downloads/lock"
 -'  1126  18  ~/Downloads/eduroam-linux-HU.py
 |4,39,1126,18,1712593857,"~/Downloads/eduroam-linux-HU.py"
 -'  1126  18  ~/Downloads/eduroam-linux-HU.py
@@ -112,6 +138,38 @@
 |4,39,1126,18,1712593857,"~/Downloads/eduroam-linux-HU.py"
 -'  1126  18  ~/Downloads/eduroam-linux-HU.py
 |4,39,1126,18,1712593857,"~/Downloads/eduroam-linux-HU.py"
+-'  1126  18  ~/Downloads/eduroam-linux-HU.py
+|4,39,1126,18,1712593857,"~/Downloads/eduroam-linux-HU.py"
+-'  1126  18  ~/Downloads/eduroam-linux-HU.py
+|4,39,1126,18,1712593857,"~/Downloads/eduroam-linux-HU.py"
+-'  1126  18  ~/Downloads/eduroam-linux-HU.py
+|4,39,1126,18,1712593857,"~/Downloads/eduroam-linux-HU.py"
+-'  1126  18  ~/Downloads/eduroam-linux-HU.py
+|4,39,1126,18,1712593857,"~/Downloads/eduroam-linux-HU.py"
+-'  1126  18  ~/Downloads/eduroam-linux-HU.py
+|4,39,1126,18,1712593857,"~/Downloads/eduroam-linux-HU.py"
+-'  1126  18  ~/Downloads/eduroam-linux-HU.py
+|4,39,1126,18,1712593857,"~/Downloads/eduroam-linux-HU.py"
+-'  1126  18  ~/Downloads/eduroam-linux-HU.py
+|4,39,1126,18,1712593857,"~/Downloads/eduroam-linux-HU.py"
+-'  1126  18  ~/Downloads/eduroam-linux-HU.py
+|4,39,1126,18,1712593857,"~/Downloads/eduroam-linux-HU.py"
+-'  1  0  ~/Downloads/eduroam-linux-HU.py
+|4,39,1,0,1712593791,"~/Downloads/eduroam-linux-HU.py"
+-'  1  0  ~/Downloads/eduroam-linux-HU.py
+|4,39,1,0,1712593791,"~/Downloads/eduroam-linux-HU.py"
+-'  1  0  ~/Downloads/eduroam-linux-HU.py
+|4,39,1,0,1712593791,"~/Downloads/eduroam-linux-HU.py"
+-'  1  0  ~/Downloads/eduroam-linux-HU.py
+|4,39,1,0,1712593791,"~/Downloads/eduroam-linux-HU.py"
+-'  1  0  ~/Downloads/eduroam-linux-HU.py
+|4,39,1,0,1712593791,"~/Downloads/eduroam-linux-HU.py"
+-'  1  0  ~/Downloads/eduroam-linux-HU.py
+|4,39,1,0,1712593791,"~/Downloads/eduroam-linux-HU.py"
+-'  1  0  ~/Downloads/eduroam-linux-HU.py
+|4,39,1,0,1712593791,"~/Downloads/eduroam-linux-HU.py"
+-'  1  0  ~/Downloads/eduroam-linux-HU.py
+|4,39,1,0,1712593791,"~/Downloads/eduroam-linux-HU.py"
 -'  1  0  ~/Downloads/eduroam-linux-HU.py
 |4,39,1,0,1712593791,"~/Downloads/eduroam-linux-HU.py"
 -'  1  0  ~/Downloads/eduroam-linux-HU.py
@@ -161,7 +219,37 @@
 -'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
 |4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
 -'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
+-'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
+|4,39,1,0,1712592056,"~/Downloads/Telegram Desktop/tempsolves.md"
 -'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
 |4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
 -'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
@@ -186,96 +274,16 @@
 |4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
 -'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
 |4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  1  0  ~/Downloads/Telegram Desktop/tempsolves.md
-|4,39,1,0,1712592055,"~/Downloads/Telegram Desktop/tempsolves.md"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
--'  2  0  ~/.config/cat_installer/cat_installer.conf
-|4,39,2,0,1712238702,"~/.config/cat_installer/cat_installer.conf"
 
 # History of marks within files (newest to oldest):
+
+> ~/heiQuality_Treffen.md
+	*	1713525170	0
+	"	4	1
+	^	4	2
+	.	4	2
+	+	1	13
+	+	4	2
 
 > ~/.config/.gitignore
 	*	1712855215	0

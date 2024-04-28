@@ -1,0 +1,5 @@
+[Added Associations]
+application/pkix-cert=org.mozilla.Thunderbird.desktop;
+
+[Default Applications]
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop

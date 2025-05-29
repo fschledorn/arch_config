@@ -21,7 +21,7 @@ require("lazy").setup({
     -- import any extra modules here
     -- Examples:
     ---   { import = "lazyvim.plugins.extras.lang.json" },
-  { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
+    { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
 
     -- ==> ADD THIS LINE FOR C++ SUPPORT <==
     { import = "lazyvim.plugins.extras.lang.cpp" },
@@ -59,6 +59,6 @@ require("lazy").setup({
   },
   opts = {
     -- You can add other top-level LazyVim options here if needed
-    colorscheme = "oxocarbon",
+    colorscheme = "carbonfox",
   },
 })

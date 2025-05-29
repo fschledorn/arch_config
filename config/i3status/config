@@ -6,8 +6,6 @@ general {
 }
 
 order += "ipv6"
-order += "run_watch VPNC"
-order += "path_exists VPN"
 order += "wireless wlan0"
 order += "ethernet eth0"
 order += "battery 0"
@@ -42,10 +40,12 @@ run_watch DHCP {
         pidfile = "/var/run/dhclient*.pid"
 }
 
-run_watch VPNC {
-        # file containing the PID of a vpnc process
-        pidfile = "/var/run/vpnc/pid"
-}
+#exec_WG {
+#        format = "VPN: %name (%ip)"
+#        format_down = "VPN: Disconnected"
+#        # file containing the PID of a wireguard process
+#        command = "wg show interfaces"
+#}
 
 path_exists VPN {
         # path exists when a VPN tunnel launched by nmcli/nm-applet is active
@@ -60,8 +60,8 @@ tztime local {
 
 cpu_usage {
         format = "CPU: %usage"
-	max_threshold = 95
-	degraded_threshold = 75
+	      max_threshold = 95
+	      degraded_threshold = 75
 }
 
 cpu_temperature 0 {

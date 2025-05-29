@@ -32,6 +32,7 @@ input * {
 
 
 output eDP-1 scale 1.2 
+output DP-3  pos -1800 1125 scale 1 
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -194,12 +195,19 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# make screenshots of parts of the screen
+bindsym $mod+Shift+P exec slurp | grim -g - - | wl-copy
+
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
-	font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-    	font pango:DejaVu Sans Mono 12
+#  status_command i3status
+  
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font pango: DejaVu Sans Mono 12
+
+ status_command exec i3status-rs ~/.config/sway/bar.toml
 }
 
 set $Locker swaylock -i $lock_bg && sleep 1

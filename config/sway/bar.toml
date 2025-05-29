@@ -1,0 +1,105 @@
+icons_format = "{icon}"
+
+[theme.overrides]
+idle_bg = "#000000" # black
+idle_fg = "#00ff00" # green
+good_bg = "#000000" # black
+#good_fg = "#ffffff" # green
+warning_fg = "#ffff00" # yellow
+critical_fg = "#ff0000" # red
+
+[icons]
+icons = "none"
+
+# --- WireGuard VPN ---
+[[block]]
+block = "custom"
+command = "echo 'VPN: '$(wg show interfaces | awk '{print $1}' | tr '' ' ')"
+
+[block.theme_overrides]
+good_fg = "#ffffff"
+idle_fg = "#ffffff"
+
+
+[[block]]
+block = "net"
+device = "wlan0"
+format = "W: $ssid $signal_strength $ip D:$speed_down/s U:$speed_up/s"
+inactive_format = "<span color='#ff0000'>W: down</span>"
+missing_format= "<span color='#ff0000'>W: down</span>"
+interval = 5
+[block.theme_overrides]
+#idle_fg = "#ff0000"
+
+[[block]]
+block = "net"
+device = "enp*"
+format = "E: $ip D:$speed_down/s U:$speed_up/s"
+inactive_format = "<span color='#ff0000'>E: down</span>"
+missing_format= "<span color='#ff0000'>E: down</span>"
+interval = 5
+[block.theme_overrides]
+#idle_fg = "#ff0000"
+
+[[block]]
+block = "battery"
+driver = "upower"
+full_format = "BAT: FULL"
+good = 100 
+info = 95
+[block.theme_overrides]
+#good_fg = "#ffffff"
+info_fg = "#ffffff"
+[block.format]
+full = "Bat: $icon $percentage $time $power"
+short = "$icon $percentage $time"
+
+[[block]]
+block = "disk_space"
+path = "/"
+info_type = "used"
+warning = 450
+alert = 480
+[block.theme_overrides]
+good_fg = "#ffffff"
+idle_fg = "#ffffff"
+[block.format]
+full = "$icon: $used/$total" 
+short = "$icon: $used"
+
+[[block]]
+block = "memory"
+format = "Mem: $mem_used.eng(w:4)"
+interval = 5 
+warning_mem = 80
+critical_mem = 95
+[block.theme_overrides]
+good_fg = "#ffffff"
+idle_fg = "#ffffff"
+
+[[block]]
+block = "cpu"
+[block.format]
+full = "CPU:$utilization $frequency"
+short = "CPU:$utilization"
+
+[[block]]
+block = "temperature"
+scale = "celsius"
+good = 10
+idle = 50
+warning = 80
+interval = 1
+chip = "coretemp-isa-*"
+format = "Temp: $average"
+
+[[block]]
+block = "custom"
+command = 'echo "$(date +%Y-%m-%d\ %H:%M:%S)"'
+interval = 1
+[block.theme_overrides]
+good_fg = "#ffffff"
+idle_fg = "#ffffff"
+
+
+

@@ -1,0 +1,25 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=false
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/Application_Schledorn_BA-1.pdf
+File2[$e]=$HOME/Downloads/Application_Schledorn_BA-2.pdf
+File3[$e]=$HOME/GitHub/oops_schledorn_sergeyeva/Sheet01/sheet01.pdf
+File4[$e]=$HOME/Downloads/sheet02.pdf
+File5[$e]=$HOME/GitHub/oops_schledorn_sergeyeva/Sheet02/sheet02.pdf
+File6[$e]=$HOME/GitHub/oops_schledorn_sergeyeva/ExerciseSheets/sheet03.pdf
+File7[$e]=$HOME/GitHub/oops_schledorn_sergeyeva/ExerciseSheets/sheet04.pdf
+Name1[$e]=Application_Schledorn_BA-1.pdf
+Name2[$e]=Application_Schledorn_BA-2.pdf
+Name3[$e]=sheet01.pdf
+Name4[$e]=sheet02.pdf
+Name5[$e]=sheet02.pdf
+Name6[$e]=sheet03.pdf
+Name7[$e]=sheet04.pdf
+
+[UiSettings]
+ColorScheme=Breeze Dark

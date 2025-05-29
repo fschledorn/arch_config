@@ -1,0 +1,9 @@
+[Added Associations]
+application/pkix-cert=org.mozilla.Thunderbird.desktop;
+text/html=firefox-3.desktop;firefox-2.desktop;
+x-scheme-handler/tonsite=org.telegram.desktop.desktop;
+
+[Default Applications]
+application/pdf=org.kde.okular.desktop
+text/html=firefox-3.desktop;
+x-scheme-handler/tonsite=org.telegram.desktop.desktop

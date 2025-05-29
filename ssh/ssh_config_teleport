@@ -1,0 +1,15 @@
+# Begin generated Teleport configuration for teleport.felix-schledorn.de by tsh
+
+# Common flags for all teleport.felix-schledorn.de hosts
+Host *.teleport.felix-schledorn.de teleport.felix-schledorn.de
+    UserKnownHostsFile "/home/schledorn/.tsh/known_hosts"
+    IdentityFile "/home/schledorn/.tsh/keys/teleport.felix-schledorn.de/schledorn"
+    CertificateFile "/home/schledorn/.tsh/keys/teleport.felix-schledorn.de/schledorn-ssh/teleport.felix-schledorn.de-cert.pub"
+    HostKeyAlgorithms rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com
+
+# Flags for all teleport.felix-schledorn.de hosts except the proxy
+Host *.teleport.felix-schledorn.de !teleport.felix-schledorn.de
+    Port 3022
+    ProxyCommand "/usr/local/bin/tsh" proxy ssh --cluster=teleport.felix-schledorn.de --proxy=teleport.felix-schledorn.de:443 %r@%h:%p
+
+# End generated Teleport configuration

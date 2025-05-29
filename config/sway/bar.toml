@@ -42,19 +42,6 @@ interval = 5
 #idle_fg = "#ff0000"
 
 [[block]]
-block = "battery"
-driver = "upower"
-full_format = "BAT: FULL"
-good = 100 
-info = 95
-[block.theme_overrides]
-#good_fg = "#ffffff"
-info_fg = "#ffffff"
-[block.format]
-full = "Bat: $icon $percentage $time $power"
-short = "$icon $percentage $time"
-
-[[block]]
 block = "disk_space"
 path = "/"
 info_type = "used"
@@ -90,7 +77,7 @@ good = 10
 idle = 50
 warning = 80
 interval = 1
-chip = "coretemp-isa-*"
+chip = "k10temp-pci-00c3"
 format = "Temp: $average"
 
 [[block]]

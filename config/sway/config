@@ -31,15 +31,19 @@ input * {
 }
 
 
-output eDP-1 scale 1.2 
-output DP-3  pos -1800 1125 scale 1 
+output DP-4 mode 3840x2160@59.997Hz position 2743 0 scale 1.4
+output HDMI-A-2 mode 3840x2160@59.940Hz scale 1.2
+
+# Toggle scale
+bindsym $mod+Shift+p exec ~/.config/sway/change_scale.sh "HDMI-A-2"
+bindsym $mod+Shift+o exec ~/.config/sway/change_scale.sh "DP-4"
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- $Locker --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -56,12 +60,14 @@ floating_modifier $mod
 xwayland enable
 # See if a window is frow wayland or X11
 for_window [shell="xwayland"] title_format "[XWayland] %title"
+# Fix broken mouse in wine (see archwiki)
+exec_always xrandr --output $(xrandr | grep -m 2 XWAYLAND | awk '{print $1;}') --primary
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -195,19 +201,12 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# make screenshots of parts of the screen
-bindsym $mod+Shift+P exec slurp | grim -g - - | wl-copy
-
-
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-#  status_command i3status
-  
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango: DejaVu Sans Mono 12
-
- status_command exec i3status-rs ~/.config/sway/bar.toml
+status_command exec i3status-rs ~/.config/sway/bar.toml
 }
 
 set $Locker swaylock -i $lock_bg && sleep 1
@@ -228,15 +227,18 @@ mode "$mode_system" {
 
 bindsym $mod+g mode "$mode_system"
 
-set $lock_bg ~/Pictures/lockscreen.jpg
+set $lock_bg ~/Pictures/lockscreen.png
 
 bindsym $mod+End exec --no-startup-id $Locker 
 
-exec swayidle -w \
-         timeout 300 'swaylock -f -c 000000 -i $lock_bg' \
-         timeout 600 'swaymsg "output * dpms off"' \
-              resume 'swaymsg "output * dpms on"' \
-         before-sleep 'swaylock -f -c 000000 -i $lock_bg'
+#exec swayidle -w \
+#         timeout 300 'swaylock -f -c 000000 -i $lock_bg' \
+#         timeout 600 'swaymsg "output * dpms off"' \
+#              resume 'swaymsg "output * dpms on"' \
+#         before-sleep 'swaylock -f -c 000000 -i $lock_bg'
 
 
 output * bg #000000 solid_color
+
+# Screenshot a selected section and copy it to the clipboard
+bindsym $mod+Print exec grim -g "$(slurp)" - | wl-copy

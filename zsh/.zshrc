@@ -11,7 +11,6 @@ fi
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -48,7 +47,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
- ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -79,6 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  copyfile
   zsh-autosuggestions 
   zsh-syntax-highlighting 
   z 
@@ -89,6 +89,16 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+# Teleport Environment viarables
+export TELEPORT_PROXY=teleport.felix-schledorn.de:443
+export TELEPORT_USER=schledorn
+
+# fzf integratiom
+export FZF_DEFAULT_COMMAND="fd --type file --color=always"
+export FZF_DEFAULT_OPTS="--ansi"
+export FZFCTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -116,45 +126,33 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias 'open'='xdg-open'
-alias 'copyfile'='wl-copy < '
-alias 'FS-Drucken'='ssh schledorn@shell.mathphys.info lp -d sw-duplex  < '                                                                                                                                            
 GPG_TTY=$(tty)
 export GPG_TTY
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-#fzf integration
-source <(fzf --zsh)
-export FZF_DEFAULT_COMMAND="fd --type f --color=always"
-export FZF_DEFAULT_OPTS="--ansi"
-export FZFCTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-# fzf aliases
+# Aliases
 alias 'fdu'='fd -u'
+alias 'FS-Drucken'='ssh schledorn@shell.mathphys.info lp -d sw-duplex  < '                                                                                                                                            
 alias 'fzfb'='fzf --preview "bat --style=full --color=always --line-range=:500 {} -A"'
-
-if [[ -z "$WAYLAND_DISPLAY" ]]; then
-  exec sway --unsupported-gpu
-fi
-
-## [Completion]
-## Completion scripts setup. Remove the following line to uninstall
-[[ -f /home/schledorn/.dart-cli-completion/zsh-config.zsh ]] && . /home/schledorn/.dart-cli-completion/zsh-config.zsh || true
+alias 'tshl'='tsh login --proxy=$TELEPORT_PROXY --user=$TELEPORT_USER'
+alias 'open'='xdg-open'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/schledorn/AUR/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/schledorn/AUR/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/schledorn/AUR/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/schledorn/AUR/miniconda3/bin:$PATH"
+        export PATH="/opt/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
+export PATH="/usr/local/opt/openssh/bin:$PATH"
